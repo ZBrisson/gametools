@@ -51,8 +51,7 @@ Function UpdateServer() {
 }
 
 Function Midnight() {
-If((Get-Date -UFormat %R) -eq '00:00') 
-{ return $true }
+((Get-Date -UFormat %R) -eq '00:00') 
 }
 
 
